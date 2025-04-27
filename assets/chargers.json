@@ -1,0 +1,34 @@
+{
+  "chargers": [
+    {
+      "name": "Expressway Charging - Mariam Enterprise",
+      "id": "a001",
+      "address": "Connaught Place, Delhi",
+      "distance": "2102",
+      "distance_metrics": "metres",
+      "latitude": 28.6315,
+      "longitude": 77.2167,
+      "connector_types": ["lvl1dc-2", "lvl2dc-1", "normalac-1"]
+    },
+    {
+      "name": "PowerGrid EV Station",
+      "id": "a002",
+      "address": "MG Road, Gurgaon",
+      "distance": "1530",
+      "distance_metrics": "metres",
+      "latitude": 18.4595,
+      "longitude": 47.0266,
+      "connector_types": ["lvl2dc-2", "normalac-3"]
+    },
+    {
+      "name": "Noida EV Station",
+      "id": "a003",
+      "address": "Secotor 18,",
+      "distance": "1530",
+      "distance_metrics": "metres",
+      "latitude": 28.4595,
+      "longitude": 77.0266,
+      "connector_types": ["lvl2dc-2", "normalac-3"]
+    }
+  ]
+}
