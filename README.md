@@ -1,50 +1,80 @@
-# Welcome to your Expo app 👋
+## EV Charger Mobile App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Objective
+Build the home screen of a mobile application for the EV Charger infrastructure company.
 
-## Get started
+## Description
 
-1. Install dependencies
+Features
+Current Location: The app requests location permissions from the user and uses the device's GPS to determine the current location. The location is displayed on a map as a pink marker.
 
-   ```bash
-   npm install
-   ```
+EV Charger Locations: The app uses data from the chargers.json file located in the assets folder to show the locations of available EV chargers. Each charger is represented by a marker on the map.
 
-2. Start the app
+Floating Action Button (FAB): A Floating Action Button (FAB) is implemented. When pressed:
 
-   ```bash
-    npx expo start
-   ```
+It captures a screenshot of the visible map section in .webp format.
 
-In the output, you'll find options to open the app in a
+Uploads the captured screenshot to Google Drive.
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+Note: You will need to authenticate using Google OAuth to upload the screenshot to Google Drive.
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+Technologies Used
+React Native: Framework used for building the mobile app.
 
-## Get a fresh project
+Expo: Used for location services and OAuth authentication.
 
-When you're ready, run:
+Google Drive API: For uploading the screenshot to Google Drive.
 
-```bash
-npm run reset-project
-```
+react-native-maps: For displaying the map with charger locations and the user’s current location.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+react-native-view-shot: For capturing the screenshot of the map.
 
-## Learn more
+Setup Instructions
 
-To learn more about developing your project with Expo, look at the following resources:
+## 1. Install Dependencies
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+First, make sure to install the necessary dependencies:
 
-## Join the community
+bash
+Copy
+Edit
+npm install
 
-Join our community of developers creating universal apps.
+## 2. Run the App
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+Start the development server and open the app on an emulator or physical device.
+
+To start the development server:
+
+npm start
+To run the app on Android:
+
+npm run android
+To run the app on iOS:
+
+npm run ios
+
+## 3. Google Drive API Integration
+
+The app requires OAuth authentication to upload files to Google Drive. To enable this functionality, follow these steps:
+
+## 4. Build for Production
+
+To build the app for Android:
+
+npm run build:android
+To build the app for iOS:
+
+npm run build:ios
+To create a release APK for Android:
+
+bash
+Copy
+Edit
+cd android && ./gradlew assembleRelease
+
+## Folder Structure
+
+assets/chargers.json: Contains the charger data used in the app.
+
+components/FAB.js: Contains the Floating Action Button component.
