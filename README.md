@@ -69,8 +69,7 @@ npm run build:ios
 To create a release APK for Android:
 
 bash
-Copy
-Edit
+
 cd android && ./gradlew assembleRelease
 
 ## Folder Structure
@@ -78,3 +77,9 @@ cd android && ./gradlew assembleRelease
 assets/chargers.json: Contains the charger data used in the app.
 
 components/FAB.js: Contains the Floating Action Button component.
+
+## Preview
+![WhatsApp Image 2025-04-28 at 00 17 47](https://github.com/user-attachments/assets/529303ed-44c5-4765-a52a-bb8ba539a889)
+
+##link 
+https://expo.dev/artifacts/eas/8vFCWVsi4U7pzMDQRg6exu.apk
